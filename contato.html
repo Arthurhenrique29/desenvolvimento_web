@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Principal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <img id="logo_cabecalho" src="imagens/logo.jpeg" alt="Logotipo da Barbearia">
+            <div id="texto_cabecalho">
+                <h1>Barbearia Pinheiros</h1>
+                <p>Seu corte em boas mãos</p>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li id="lista"><a href="index.html">Home</a></li>
+                <li id="lista"><a href="barbeiros.html">Barbeiros</a></li>
+                <li id="lista"><a href="servicos.html">Serviços</a></li>
+                <li id="lista"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contato">
+            <div id="horario">
+                <h2>Contato</h2>
+                <p><br>Entre em contato conosco pelo e-mail</p>
+                <p><strong><br>Horário de Funcionamento:</strong></p>
+                <ul>
+                    <li>Segunda a Sexta: 9h - 19h</li>
+                    <li>Sábado: 9h - 14h</li>
+                    <li>Domingo: Fechado</li>
+                </ul>
+            </div>
+            <div id="formulario-container">
+                <form id="formulario" action="" method="get">
+                    <h2>Envie-nos uma mensagem</h2>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Barbearia Pinheiros - 2024</p>
+        <a href="politica_de_privacidade.html" target="_blank">Políticas de Privacidade</a>
+    </footer>
+</body>
+</html>

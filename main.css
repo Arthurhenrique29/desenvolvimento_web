@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif; /* Use uma fonte moderna */
+      line-height: 1.6; /* Aumenta a legibilidade */
+    background-color: #F5F5F5;
+    color: #555555;
+    margin: 0;
+    padding: 0;
+    }
+  h1, h2, h3 {
+    color: #C9A66B;
+    }
+  
+  header {
+    background-image:
+      linear-gradient(#4b362164, #4B3621), /* Gradiente com transparência */
+      url('imagens/fundo.jpeg'); /* Imagem de fundo */;
+    background-size: auto; /* Ajusta o tamanho da imagem para 100x100px (ou o tamanho que você desejar) */
+    background-repeat: repeat; /* Faz a imagem se repetir para cobrir toda a área */
+    background-color: #4B3621;
+    color: #C9A66B;
+    padding: 40px 40px 0 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+    height: vh;
+  }
+  
+  
+  #cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+      
+  }
+  #logo_cabecalho {
+    flex: 1;
+    max-height: 120px;
+    max-width: 120px;
+    margin-left: 0px; 
+    margin-bottom: 20px;
+  }
+  #texto_cabecalho {
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-left: -155px;
+  }
+  #texto_cabecalho h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  nav {
+    background-color: #C9A66B;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  nav ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo */
+  }
+  nav ul li a:hover {
+    color: #4A4A4A; /* Cor do texto ao passar o mouse */
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo geral para a seção */
+  #boas-vindas {
+    display: flex; /* Usando flexbox para organizar a imagem e o texto */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaça o texto e a imagem */
+    margin-left: 80px; /* Adiciona espaço à esquerda */
+    margin-right: 80px; /* Adiciona espaço à direita */
+    margin-top: 20px; /* Adiciona espaço acima */
+    margin-bottom: 20px; /* Adiciona espaço abaixo */
+    border: #4B3621;
+  }
+  /* Estilo do texto */
+  #boas-vindas .texto {
+    flex: 1; /* Faz com que o texto ocupe o espaço da esquerda */
+    max-width: 600px; /* Define uma largura máxima para o bloco de texto */
+    text-align: left;
+  }
+  /* Estilo dos botões */
+  .botoes {
+    margin-top: 20px; /* Espaçamento entre o texto e os botões */
+  }
+  .botao {
+    background-color: #4B3621; /* Cor de fundo marrom */
+    color: #C9A66B; /* Cor de texto dourada */
+    padding: 10px 20px;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    border: #C9A66B 2px solid; /* Borda dourada */
+    border-radius: 20px; /* Borda arredondada */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }
+  .botao:hover {
+    background-color: #C9A66B; /* Muda a cor de fundo ao passar o mouse */
+    color: #4B3621; /* Muda a cor do texto ao passar o mouse */
+    border: #4B3621 2px solid; /* Muda a cor da borda ao passar o mouse */
+  }
+  
+  /* Estilo da imagem */
+  #boas-vindas img {
+    flex: 1; /* A imagem também ocupa espaço flexível */
+    max-width: 500px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Garante que a imagem mantenha a proporção */
+    border-radius: 40px; /* Borda arredondada */
+    border: #C9A66B 2px solid; /* Borda dourada */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  }
+  
+  /* Sobre Nós */
+  #sobre_nos {
+    background-color: #8B5E3C; /* Cor de fundo marrom */
+    padding: 20px 80px 20px 80px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente no centro */
+    display: flex; /* Usando flexbox para organizar a imagem e o texto */
+    border-top: #4B3621 5px solid; /* Borda marrom */
+    border-bottom: #4B3621 5px solid; /* Borda marrom */
+    justify-content: center; /* Centraliza o conteúdo principal */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }
+  #sobre_nos:hover {
+    background-color: #4B3621; /* Muda a cor de fundo ao passar o mouse */
+    color: #C9A66B; /* Muda a cor do texto ao passar o mouse */
+    border-top: #C9A66B 5px solid; /* Borda marrom */
+    border-bottom: #C9A66B 5px solid; /* Borda marrom */
+  }
+  #texto_s {
+    flex: 1; /* Faz com que o texto ocupe o espaço da esquerda */
+    max-width: 600px; /* Define uma largura máxima para o bloco de texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #F5F5F5;
+  }
+  #img_s {
+    flex: 1; /* A imagem também ocupa espaço flexível */
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+    height: 400px; /* Garante que a imagem mantenha a proporção */
+    border-radius: 100%; /* Borda arredondada */
+    border: #C9A66B 2px solid; /* Borda dourada */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  }
+  /* Seção de Barbeiros */
+  #secao_barbeiros {
+    border-top: #C9A66B 5px solid; /* Borda marrom */
+    border-bottom: #C9A66B 5px solid; /* Borda marrom */
+    margin: 20px 80px 40px 80px;
+    padding: 20px 0 0 0;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  }
+  .texto_barbeiro {
+    color: #4B3621; /* Cor do texto marrom */
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center; /* Centraliza o conteúdo principal */
+    align-items: center;
+    max-width: 400px; /* Define uma largura máxima para o bloco de texto */
+    margin: 0 auto; /* Centraliza o bloco de texto */
+  }
+  #barbeiros h3 {
+    color: #C9A66B;
+  }
+  #barbeiros {
+    display: flex; /* Usando flexbox para organizar os barbeiros */
+    justify-content: center; /* Centraliza o conteúdo */
+  }
+  .img_barbeiro {
+    max-width: 150px; /* Define uma largura máxima para a imagem */
+    height: 150px; /* Define uma altura fixa para a imagem */
+    border-radius: 100%; /* Borda arredondada */
+    border: #C9A66B 2px solid; /* Borda dourada */
+    margin: 20px; /* Espaçamento entre as imagens */
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }
+  
+  /* Seção de serviços */
+  #secao_servicos {
+    background-color: #8B5E3C; /* Cor de fundo marrom */
+    padding: 20px 80px 20px 80px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Centraliza o conteúdo principal */
+    border-bottom: #C9A66B 5px solid; /* Borda dourada */
+  }
+  #servicos {
+    display: flex; /* Usando flexbox para organizar a imagem e o texto */
+  }
+  .produto {
+    flex: 1; /* Faz com que o bloco ocupe o espaço disponível */
+    margin: 30px 50px 30px 50px; /* Espaçamento entre os blocos */
+    padding: 30px; /* Espaçamento interno */
+    border: #C9A66B 2px solid; /* Borda dourada */
+    border-radius: 30px; /* Borda arredondada */
+    background-color: #4B3621; /* Cor de fundo marrom */
+    color: #F5F5F5; /* Cor do texto dourada */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  }
+  .img_produto {
+    max-width: 200px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Garante que a imagem mantenha a proporção */
+    border-radius: 10px; /* Borda arredondada */
+    border: #C9A66B 2px solid; /* Borda dourada */
+  }
+  
+  /* Seção de Contato */
+  #contato {
+    background-image: 
+      linear-gradient(#70543856, #4b36219b), /* Gradiente com transparência */
+      url('imagens/teste3.jpeg'); /* Imagem de fundo */;; /* Imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir */
+    display: flex; /* Flexbox para organizar o layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #f2f2f2; /* Cor de fundo geral */
+    padding: 20px;
+  }
+  /* Estilo para a área de informações */
+  #horario {
+    background-color: #4B3621; /* Fundo marrom */
+    color: #C9A66B; /* Texto dourado */
+    padding: 40px; /* Espaçamento interno */
+    width: 300px; /* Largura fixa */
+    border-radius: 8px 0 0 8px; /* Bordas arredondadas no lado esquerdo */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }
+  /* Estilo para o formulário */
+  #formulario-container {
+    border: 1px solid #C9A66B; /* Borda dourada ao redor do formulário */
+    border-left: none; /* Remove a borda esquerda para conectar com o horário */
+    padding: 40px; /* Espaçamento interno */
+    width: 400px; /* Largura fixa */
+    border-radius: 0 8px 8px 0; /* Bordas arredondadas no lado direito */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    background-color: white; /* Fundo branco */
+  }
+  /* Estilo dos campos do formulário */
+  #formulario {
+    display: flex;
+    flex-direction: column; /* Campos empilhados */
+  }
+  #formulario label {
+    margin-top: 10px; /* Espaçamento entre o label e o campo */
+  }
+  #formulario input, #formulario textarea {
+    margin-top: 5px; /* Pequeno espaço entre o label e o input */
+    padding: 10px; /* Espaçamento interno dos campos */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  #formulario textarea {
+    resize: vertical; /* Permite redimensionamento vertical do textarea */
+    height: 100px; /* Altura fixa inicial */
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  #formulario button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4B3621;
+    color: #C9A66B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #formulario button:hover {
+    background-color: #C9A66B;
+    color: #4B3621;
+  }
+  
+  /* Estilo para a barra de separação */
+  
+  .barra {
+    height: 5px;
+    background-color: #C9A66B;
+  }
+  
+  /* Estilo geral do footer */
+  footer {
+    background-color: #4B3621; /* Fundo marrom rústico */
+    color: #C9A66B; /* Texto dourado */
+    padding: 20px 0; /* Espaçamento no topo e na base */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer-container {
+    display: flex; /* Flexbox para alinhar conteúdo horizontalmente */
+    justify-content: space-between; /* Espaço entre as duas seções */
+    align-items: center; /* Centraliza verticalmente os itens */
+    width: 80%; /* Largura do rodapé centralizada */
+    max-width: 1200px; /* Limite de largura */
+    padding: 20px 0; /* Espaçamento interno */
+  }
+  
+  /* Seção de direitos autorais e privacidade */
+  #rodape {
+    display: flex;
+    flex-direction: column; /* Coloca o texto e o link de privacidade em coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    width: 50%; /* O rodapé ocupa metade da largura */
+  }
+  
+  /* Estilo dos links de navegação */
+  #links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha os links à direita */
+    width: 50%; /* Os links ocupam a outra metade */
+  }
+  
+  #links ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Coloca os itens em linha */
+  }
+  
+  #links ul li {
+    margin-left: 15px; /* Espaçamento entre os links */
+  }
+  
+  #links ul li a {
+    color: #C9A66B; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+  }
+  
+  #links ul li a:hover {
+    color: white; /* Cor dos links ao passar o mouse */
+  }
+  #rodape a {
+    color: #C9A66B; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+  }
+  #rodape a:hover {
+    color: white; /* Cor dos links ao passar o mouse */
+  }
+  
+  
+  /* Barra separadora vertical */
+  .barra_h {
+    width: 2px; /* Espessura da barra */
+    height: 70px; /* Altura da barra */
+    background-color: #C9A66B; /* Cor dourada */
+    margin: 0 20px; /* Espaçamento ao redor da barra */
+  }
+  .barra {
+    height: 5px; /* Altura da barra */
+    background-color: #C9A66B; /* Cor da barra */
+  }
+  .logo {
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+/* Responsividade: Ajustes em telas menores */
+@media (max-width: 768px) {
+  /* Responsividade para telas menores */
+  #boas-vindas,
+  #sobre_nos,
+  #secao_barbeiros,
+  #secao_servicos {
+      height: auto; /* Permitir altura automática */
+      margin: 20px; /* Reduzir margens laterais */
+      padding: 10px; /* Adiciona padding para melhor visualização */
+  }
+  #boas-vindas {
+      flex-direction: column; /* Alinhamento vertical para telas menores */
+  }
+  #boas-vindas img {
+      max-width: 100%; /* Ajustar imagem ao tamanho da tela */
+      height: auto; /* Manter proporção */
+  }
+  #sobre_nos img {
+      max-width: 100%; /* Ajustar imagem ao tamanho da tela */
+}
+}
+@media (max-width: 480px) {
+  /* Responsividade para telas menos*/
+  header {
+      padding: 10px; /* Reduzir o padding para telas pequenas */
+  }
+  main {
+      padding: 10px; /* Adicionar padding para melhor visualização */
+  }
+  nav {
+      padding: 10px; /* Aumentar padding do nav */
+  }
+  #boas-vindas {
+      margin: 10px; /* Reduzir margens laterais */
+  }
+  #boas-vindas img {
+      max-width: 100%; /* Ajustar imagem ao tamanho da tela */
+      height: auto; /* Manter proporção */
+      }
+  #boas-vindas .texto { 
+      max-width: 100%; /* Ajustar texto ao tamanho da tela */
+  }
+  #sobre_nos {
+      padding: 10px; /* Reduzir padding para telas pequenas */
+  }
+  #sobre_nos img {
+      max-width: 100%; /* Ajustar imagem ao tamanho da tela */
+      height: auto; /* Manter proporção */                           
+  }
+  #sobre_nos .texto {
+      max-width: 100%; /* Ajustar texto ao tamanho da tela */
+  }
+  #secao_barbeiros {
+      padding: 10px; /* Reduzir padding para telas pequenas */
+  }
+  #secao_barbeiros img {
+      max-width: 100%; /* Ajustar imagem ao tamanho da tela */
+      height: auto; /* Manter proporção */
+  } 
+  #secao_barbeiros .texto_barbeiro {
+      max-width: 100%; /* Ajustar texto ao tamanho da tela */
+  }
+  #secao_servicos {
+      padding: 10px; /* Reduzir padding para telas pequenas */
+  }
+  #secao_servicos img {
+      max-width: 100%; /* Ajustar imagem ao tamanho da tela */    
+      height: auto; /* Manter proporção */ 
+    }
+  #secao_servicos .produto {
+      max-width: 100%; /* Ajustar texto ao tamanho da tela */
+}
+}
